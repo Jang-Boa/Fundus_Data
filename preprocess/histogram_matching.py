@@ -8,7 +8,7 @@ def color_adjustment(source, target_mean=np.array([ 94.0, 137.0, 85.0]), image_s
     - General: np.array([ 100.0, 130.0, 90.0])
     - Future: np.array([ 94.0, 137.0, 85.0]) 
     """
-    source = cv2.resize(source, (image_size, image_size))
+    # source = cv2.resize(source, (image_size, image_size))
     
     # 이미지를 LAB 색상 공간으로 변환
     source_lab = cv2.cvtColor(source, cv2.COLOR_BGR2LAB)
